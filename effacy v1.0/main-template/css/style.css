@@ -648,7 +648,7 @@ ul {
 }
 .about-us-right {
     background: #1f1f1f none repeat scroll 0 0;
-    padding: 60px 92px 60px 92px;
+    padding: 60px 110px 60px 75px;
 }
 .about-us-right .media {
     margin-top: 40px;
@@ -698,11 +698,7 @@ ul {
   padding: 0 20px;
 }
 
-#headShot {
-  height: 460px;
-  width: auto;
-  border-radius: 100%;
-}
+
 
 /* ============================
     Our Services
@@ -1239,6 +1235,9 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
     filter: alpha(opacity=80);
 }
 
+a#resume, h2#resume {
+  color: #fff;
+}
 
 
 
