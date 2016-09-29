@@ -226,7 +226,7 @@ ul {
 =============================== */
 
 .section-padding {
-    padding: 130px 0;
+    padding: 130px 100px;
 }
 .morphext > .animated {
     display: inline-block;
@@ -707,7 +707,7 @@ ul {
 /* ============================
     Our Services
 =============================== */
-.single-service .media .fa:before {
+/*.single-service .media .fa:before {
   border-radius: 50%;
   color: #fff;
   display: block;
@@ -764,13 +764,13 @@ ul {
 }
 .single-service .media:hover h3 , .single-service .media:hover p {
     color: #fff;
-}
+}*/
 
 
 /* ============================
     Testimonial Section
 =============================== */
-.testimonial-section {
+/*.testimonial-section {
     position: relative;
     width: 100%;
     background: url("../img/bg/testimonial-bg.jpg") no-repeat scroll center center / cover;
@@ -855,12 +855,13 @@ ul {
             transition: all 0.3s ease 0s;
 }
 
-
+*/
 /* ============================
     Portfolio Section
 =============================== */
 #portfolio {
   background-color: #dbdbdb;
+  height: 1050px;
 }
 .custom-nav ul {
     margin-top: 0;
@@ -974,6 +975,14 @@ button.sl-prev .fa, button.sl-next .fa {
   padding-left: 10px;
 }
 
+.media-object {
+  height: 190px;
+  width: auto;
+}
+
+.media-body {
+  vertical-align: middle;
+}
 /* ============================
     Awards Section
 =============================== */
