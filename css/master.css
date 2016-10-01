@@ -141,7 +141,7 @@ span {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  height: 427px;
+  height: 386px;
   /*padding-right: 100px;*/
   line-height: 2em;
   font-size: 15px;
@@ -155,4 +155,20 @@ span {
   #photo-back {
     width: 100%;
   }
+}
+
+/*Contact Me*/
+.contact {
+  text-align: center;
+}
+.social {
+  list-style: none;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.social li {
+  display: inline;
+  text-align: center;
 }
