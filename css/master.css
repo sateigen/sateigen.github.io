@@ -1,248 +1,136 @@
-* {
-  box-sizing: border-box;
+/*Navbar*/
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(51, 51, 51, 1);
 }
-
-.welcome {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background-color: #111;
-  background-image: url("../images/rock_current.jpg");
-  min-height: 600px;
-  padding: 0;
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  background-attachment: fixed;
+#custom-bootstrap-menu.navbar-default {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 0px;
 }
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #000;
-  z-index: 2;
-  opacity: .6;
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
-
-div {
-  display: block;
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(26, 188, 156, 1);
 }
-
-.content {
-  position: relative;
-  width: 100%;
-  top: 50%;
-  transform: translate(0, -50%);
-  transition: all .2s ease-out;
-  z-index: 10;
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(26, 188, 156, 1);
 }
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #1abc9c;
 }
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #1abc9c;
 }
-
-.welcome h1, .welcome h2, .welcome h3, .welcome p {
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1abc9c;
 }
-
-.welcome p {
-  font-size: 22px;
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
 }
-
-.italics {
-  font-style: italic;
-}
-
-p {
-  margin: 0 0 22px;
-  display: block;
-}
-
-h1, h2, h3 {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
-
-h1 {
-  font-size: 48px;
-  margin: .67em 0;
-  display: block;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  font-weight: 700;
-  line-height: 1.3;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-
-
-
-/*Navigation*/
-.navbar-default {
-  background-color: #fff;
-  border-bottom-color: #e6e6e6;
-}
-
-.navbar {
-  font-style: italic;
-  min-height: 40px;
-  margin-bottom: 0;
-  border-bottom: 1px solid transparent;
-}
-
-/*Links*/
-/*.nav.navbar-nav.navbar-right li a {
-    color: #c7c7c7;
-    font-size: 14px;
-}*/
-
-/*.nav.navbar-nav.navbar-right li a:hover {
-    color: #000;
-}*/
-
-/*Logo?*/
-/*.navbar-brand,
-.navbar-nav li a {
-    line-height: 75px;
-    height: 57px;
-    padding-top: 0;
-}*/
-
-/*#bg-cover {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
-}
-
+/*body*/
 body {
-  margin-top: 25px;
-  padding-top: 15px;
+  padding-top: 70px;
+  height: 100%;
 }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 10%
-  padding-top: 10px;
-  display: inline-block;
+* {
+  font-family: Raleway;
 }
-
-.section {
-  margin: 0px 0;
-  width: 100%;
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
 }
-
-
-.section h1 {
-  font: 55px/65px Helvetica, sans-serif;
-  margin-top: 10px;
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-.section p {
-  font: 15px/25px Helvetica, sans-serif;
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
+p {
+  color: black;
+}
+span {
+  color: #1abc9c
+}
+/*landing page*/
+.parallax {
+    /* The image used */
+    background-image: url("../img/rock_current.jpg");
 
-#bio-header,#portfolio-header,#skills-header {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#top {
+  height: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  background-color: rgba(0, 0, 0, 0.5);
+
 }
 
-#bio-header {
-  height: 150px;
+/*Portfolio*/
+.project-image {
+  width: 360px;
+  height: 190px;
+  box-shadow: 0 4px 8px 6px rgba(0,0,0,0.2);
 }
 
-#portfolio-header {
-  height: 650px;
-}
-
-#bio,#portfolio,#skills{
-  padding-top: 10px;
-  background-color: #fff
-}
-
-#bio {
-  background-color: #ececec
-}
-
-.well {
-  border: 0px;
-  background-color: transparent;
-}
-
-#box1 img {
-  padding: 0;
-  height: 200px;
-  width: auto;
-}
-
-#project1.row {
-  vertical-align: middle;
-}
-
-#box2 {
-  height: 250px;
-  width: 250px;
-  background-color: #b4b4b4;
+.section-title {
+  color: #000;
   text-align: center;
-  line-height: 250px;
+  font-weight: 600;
 }
 
-#box2 p {
+.sub-title {
+  text-align: center;
+}
+
+.project-heading {
+  color: #000;
+  font-weight: 600;
+}
+
+#projects {
+  padding-bottom: 5%;
+}
+/*About Me*/
+.about {
+  background-color: #dbdbdb;
   display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-}
-
-.row {
-  padding-bottom: 55px;
 }
 
 #photo {
-  height: 250px;
-  width: 250px;
-  background-color: #b4b4b4;
-  text-align: center;
-  line-height: 250px;
+  background-color: #1f1f1f;
+  height: 500px;
 }
 
-#photo p {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+.bio {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  height: 427px;
+  padding-right: 100px;
 }
 
-.row-hero {
-  height: 100px;
+#bio {
+  padding-right: 100px;
 }
-
-.buffer-top {
-  text-align: right;
-  padding: 100px;
-  height: 750px;
-  color: white;
-  font-family: Verdana;
-}
-
-#positions {
-  font-size: 16px;
-  letter-spacing: 0.4em;
-}*/
