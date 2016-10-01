@@ -43,6 +43,11 @@ body {
 }
 * {
   font-family: Raleway;
+  box-sizing: border-box;
+}
+.row::after {
+    clear: both;
+    display: block;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
@@ -118,19 +123,36 @@ span {
   display: inline-block;
 }
 
-#photo {
+#photo-back {
   background-color: #1f1f1f;
-  height: 500px;
+  /*height: 500px;*/
+  width: 50%;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
+#photo {
+  height: auto;
+  width: 90%;
+  border-radius: 100%;
+}
 .bio {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   height: 427px;
-  padding-right: 100px;
+  /*padding-right: 100px;*/
+  line-height: 2em;
+  font-size: 15px;
 }
 
 #bio {
   padding-right: 100px;
+}
+
+@media (max-width: 750px) {
+  #photo-back {
+    width: 100%;
+  }
 }
