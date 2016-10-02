@@ -166,7 +166,7 @@ div#about.row {
 }
 #photo-back {
   background-color: #1f1f1f;
-  /*height: 500px;*/
+  height: 500px;
   width: 50%;
   display: flex;
   justify-content: center; /* align horizontal */
@@ -174,9 +174,9 @@ div#about.row {
 }
 
 #photo {
-  height: 70%;
+  max-height: 100%;
   width: 70%;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .bio {
   display: flex;
