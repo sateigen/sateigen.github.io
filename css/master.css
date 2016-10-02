@@ -92,14 +92,25 @@ a:hover {
     background-size: cover;
 }
 #top {
-  height: 700px;
+  height: 750px;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  background-color: rgba(0, 0, 0, 0.5);
-
+  z-index: 100;
 }
 
+.parallax-overlay {
+position: absolute;
+width: 100%;
+height: 750px;
+z-index: 2;
+background-color: #080d15;
+opacity: .7;
+ }
+
+div.container-fluid {
+  z-index: 3;
+}
 /*Portfolio*/
 .project-image {
   width: 360px;
@@ -163,8 +174,8 @@ div#about.row {
 }
 
 #photo {
-  height: auto;
-  width: 90%;
+  height: 70%;
+  width: 70%;
   border-radius: 100%;
 }
 .bio {
