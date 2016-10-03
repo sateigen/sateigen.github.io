@@ -182,7 +182,7 @@ div#about.row {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  height: 380px;
+  /*height: 380px;*/
   /*padding-right: 100px;*/
   line-height: 2em;
   font-size: 15px;
@@ -199,8 +199,15 @@ div#about.row {
   div#about.row {
     display: inline-block;
   }
+  #photo {
+    width:50%
+  }
 }
-
+@media (max-width: 500px) {
+  #photo {
+    width:100%
+  }
+}
 /*Contact Me*/
 .contact {
   text-align: center;
